@@ -4,14 +4,16 @@ const sites = [
     "title": "freemediaheckyeah",
     "image": "freemediaheckyeah.png",
     "date_added": "2026-10-15",
-    "tags": ["Resources"]
+    "tags": ["Resources"],
+    "description": "A huge collection of free stuff: games, books, tv, manga, etc."
   },
   {
     "url": "https://www.drawabox.com/",
     "title": "Drawabox",
     "image": "drawabox.png",
     "date_added": "2026-10-15",
-    "tags": ["Art"]
+    "tags": ["Art"],
+    "description": ""
   },
   {
     "url": "https://graphic.neocities.org/",
@@ -49,11 +51,39 @@ const sites = [
     "tags": ["Stock Assets", "Music"]
   },
   {
-    "url": "https://www.photoroom.com/tools/background-remover",
+    "url": "https://www.photoroom.com/tools/background-remover/",
     "title": "Photoroom Background Remover",
     "image": "photoroom.png",
     "date_added": "2026-10-15",
     "tags": ["Tools"]
+  },
+  {
+    "url": "https://ambientcg.com/",
+    "title": "AmbientCG",
+    "image": "ambientcg.png",
+    "date_added": "2026-10-16",
+    "tags": ["Textures", "Stock Assets"]
+  },
+  {
+    "url": "https://github.com/BuddyWinte/purrlet",
+    "title": "AmbientCG",
+    "image": "ambientcg.png",
+    "date_added": "2026-10-16",
+    "tags": ["Textures", "Stock Assets"]
+  },
+  {
+    "url": "https://github.com/BuddyWinte/purrlet",
+    "title": "Purrlet",
+    "image": "purrlet.png",
+    "date_added": "2026-10-16",
+    "tags": ["Script", "Repository"]
+  },
+  {
+    "url": "https://github.com/BuddyWinte/meowquee",
+    "title": "Meowquee",
+    "image": "meowquee.png",
+    "date_added": "2026-10-16",
+    "tags": ["Script", "Repository"]
   },
   
 ]

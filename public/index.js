@@ -1,10 +1,44 @@
 const outputEl = document.querySelector('output');
 
+const allTags = []
+
 sites.forEach((site, index) => {
+
+  site.tags.forEach(tag => {
+    if(!allTags.includes(tag))
+    {
+      allTags.push(tag)
+    }
+  })
+
   let websiteEntryEl = document.createElement('a');
   websiteEntryEl.href = site.url;
   websiteEntryEl.classList.add('website_entry')
   websiteEntryEl.setAttribute('key', index);
+
+  websiteEntryEl.addEventListener('mouseover', (e)=>{
+    
+    let descriptionEl = document.createElement('div');
+    descriptionEl.classList.add('description');
+
+    let p1 = document.createElement('p');
+    p1.textContent = `Added on: ${site.date_added}`;
+
+    let p2 = document.createElement('p');
+    p2.textContent = site.description;
+
+    descriptionEl.appendChild(p1);
+    descriptionEl.appendChild(p2);
+
+    websiteEntryEl.appendChild(descriptionEl);
+  });
+
+  websiteEntryEl.addEventListener('mouseout', (e)=>{
+    
+    websiteEntryEl.querySelector('.description').remove()
+  });
+
+  
 
   let articleEl = document.createElement('article');
   site.comment ? articleEl.title = site.comment : null;
@@ -23,6 +57,13 @@ sites.forEach((site, index) => {
   outputEl.appendChild(websiteEntryEl);
 });
 
+const searchEl = document.querySelector('section > search')
+
+allTags.forEach(tag => {
+  let searchCategory = document.createElement('button');
+  searchCategory.textContent = tag;
+  searchEl.prepend(searchCategory);
+})
 
 const searchCategories = document.querySelectorAll('search > button:not(.control)');
 const websiteEntries = document.querySelectorAll('.website_entry');
