@@ -66,24 +66,17 @@ const sites = [
   },
   {
     "url": "https://github.com/BuddyWinte/purrlet",
-    "title": "AmbientCG",
-    "image": "ambientcg.png",
-    "date_added": "2026-10-16",
-    "tags": ["Textures", "Stock Assets"]
-  },
-  {
-    "url": "https://github.com/BuddyWinte/purrlet",
     "title": "Purrlet",
     "image": "purrlet.png",
     "date_added": "2026-10-16",
-    "tags": ["Script", "Repository"]
+    "tags": ["Scripts", "Repository"]
   },
   {
     "url": "https://github.com/BuddyWinte/meowquee",
     "title": "Meowquee",
     "image": "meowquee.png",
     "date_added": "2026-10-16",
-    "tags": ["Script", "Repository"]
+    "tags": ["Scripts", "Repository"]
   },
   
 ]
